@@ -1,0 +1,187 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{color}
+\usepackage{graphicx}
+\begin{document}
+
+\title{LaTeX Informational File}
+\author{Samuel Lamb}
+\date{\today}
+\maketitle
+
+
+
+
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+This is the introduction.
+
+\section{Methods}
+
+\subsection{Stage 1}
+\label{sec1}
+The first part of the methods.
+
+\subsection{Stage 2}
+The second part of the methods.
+
+\section{Results}
+Here are the results.
+Referring to section \ref{sec1} on page \pageref{sec1}
+
+\section{...}
+\subsection{Word Commands}
+\subsubsection{Words, Fonts, Colors}
+
+\textit{words in italics} \newline
+\textsl{words slanted} \newline
+\textsc{words in smallcaps} \newline
+\textbf{words in bold} \newline
+\texttt{words in teletype} \newline
+\textsf{sans serif words} \newline
+\textrm{roman words} \newline
+\underline{underlined words} \newline
+{\color{red}fire} \newline
+{\tiny tiny words} \newline
+{\scriptsize scriptsize words} \newline
+{\footnotesize footnotesize words} \newline
+{\small small words} \newline
+{\normalsize normalsize words} \newline
+{\large large words} \newline
+{\Large Large words} \newline
+{\LARGE LARGE words} \newline
+{\huge huge words} \newline
+
+\subsection{Lists}
+\begin{enumerate}
+\item First thing
+\item Second thing
+\begin{itemize}
+\item A sub-thing
+\item[-] Another sub-thing
+\end{itemize}
+\item Third thing
+\end{enumerate}
+
+\subsection{Comments}
+
+\indent A comment is written using the percent command %Like this
+
+\section{Special Characters}
+
+\#
+\$
+\%
+\~{}
+\&
+\_
+\{
+\}
+\~{}
+\textbackslash
+\newline Item \#1A\textbackslash642 costs \$8 \& is sold at a \~{}{10\% profit.
+
+\section{Tables}
+
+\subsection{1}
+\begin{tabular}{|l|l|}
+Apples & Green \\
+Strawberries & Red \\
+Oranges & Orange \\
+\end{tabular}
+\subsection{2}
+\begin{tabular}{rc}
+Apples & Green \\
+\hline
+Strawberries & Red \\
+\cline{1-1}
+Oranges & Orange \\
+\end{tabular}
+\subsection{3}
+\begin{tabular}{|r|l|}
+\hline
+8 & here’s \\
+\cline{2-2}
+86 & stuff \\
+\hline \hline
+2008 & now \\
+\hline
+\end{tabular}
+\subsection{4}
+\begin{tabular}{l|c|c}
+Item & Quantity & Price(\$) \\
+\hline
+Nails & 500 & 0.34 \\
+Wooden boards & 100 & 4.00 \\
+Bricks & 240 & 11.50
+\end{tabular}
+\subsection{5}
+\begin{tabular}{l|ccc}
+
+& & Year\\
+\cline{2-4}
+City & 2006 & 2007 & 2008 \\
+\cline{1-4}
+London & 45789 & 46551 & 51298 \\
+Berlin & 34549 & 32543 & 29870 \\
+Paris & 49835 & 51009 & 51970
+\end{tabular}
+
+\section{Figures}
+Images should be PDF, PNG, JPEG or GIF files.
+\newline
+\begin{figure}[h]
+\centering
+\includegraphics[width=1in]{Steam Profile Pic.jpg} %can also do \textwidth to make it span screen por \scale = 0.5 to scale down or up
+\caption{This is my image}
+\label{image-Steam}
+\end{figure}
+
+\section{Equations}
+\subsection{Inserting Equations}
+$1+2=3$ %Insert Equation
+$$1 + 2 = 3$$ %Put on it's own line
+\begin{equation}
+1+2=3
+\end{equation}
+
+\begin{eqnarray}
+a & = & b + c \\
+& = & y - z
+\end{eqnarray}
+
+\subsection{Symbols}
+\subsubsection{Powers \& Indices}
+$n^2$
+$2_a$
+$b_{a-2}$
+\subsubsection{Fractions}
+$$\frac{a}{3}$$
+$$\frac{y}{\frac{3}{x}+b}$$
+\subsubsection{Roots}
+$$\sqrt[x]{y^2}$$
+$$\sqrt{y^2}$$
+\subsubsection{Sums \& Integrals}
+$$\sum_{x=1}^5 y^z$$
+$$\int_a^b f(x)$$ 
+\subsubsection{Greek Letters}
+$\alpha$ 
+$\beta$ 
+$\delta, \Delta$ 
+$\theta, \Theta$ 
+$\mu$ 
+$\pi, \Pi$ 
+$\sigma, \Sigma$ 
+$\phi, \Phi$ 
+$\psi, \Psi$
+$\omega, \Omega$
+
+
+
+
+
+\end{document}
